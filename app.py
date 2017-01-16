@@ -2,6 +2,12 @@ from flask import Flask, render_template, request, json, redirect
 
 app = Flask(__name__)
 
+a = 2
+if a==2 :
+	print("sss")
+else:
+	print("fff")
+
 @app.route("/")
 def main():
     return render_template('index.html')
